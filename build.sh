@@ -116,3 +116,5 @@ EOF
 sudo cp -a linux-rpi-3.2.27/build/dist/lib/modules rootfs/lib/
 sudo cp -a linux-rpi-3.2.27/build/dist/include/* rootfs/usr/include
 sudo cp linux-rpi-3.2.27/build/.config rootfs/boot/config-3.2.27-xenomai+
+
+./build-cnc.sh
