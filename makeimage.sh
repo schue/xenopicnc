@@ -15,8 +15,6 @@ sudo losetup /dev/loop0 rpi-lcnc.img -o $((206848*512))
 sudo mkfs.ext4 -L ROOT /dev/loop0
 sudo losetup -d /dev/loop0
 
-exit
-
 mkdir -p mnt/{boot,root}
 sudo mount -o loop,offset=$((2048*512)) rpi-lcnc.img mnt/boot
 sudo mount -o loop,offset=$((206848*512)) rpi-lcnc.img mnt/root
